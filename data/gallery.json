@@ -1,0 +1,127 @@
+[
+    {
+        "category":"toprated",
+        "alt":"Top Rated Nail Art",
+        "overlay" : "Metalic",
+        "image" : "./media/toprated1.png"
+    },
+    
+    {
+        "category":"toprated",
+        "alt":"Top Rated Nail Art",
+        "overlay" : "Bold",
+        "image" : "./media/toprated2.png"
+    },
+
+    
+    {
+        "category":"toprated",
+        "alt":"Top Rated Nail Art",
+        "overlay" : "Marble",
+        "image" : "./media/toprated3.png"
+    },
+
+     {
+        "category":"toprated",
+        "alt":"Top Rated Nail Art",
+        "overlay" : "Smokey Gray",
+        "image" : "./media/toprated4.png"
+    },
+
+     {
+        "category":"3D",
+        "alt":"3D nail Art",
+        "overlay" : "3D Ocean",
+        "image" : "./media/3D1.png"
+
+    },
+
+    {
+        "category":"3D",
+        "alt":"3D nail Art",
+        "overlay" : "Sea Shell",
+        "image" : "./media/3D2.png"
+
+    },
+
+    {
+        "category":"3D",
+        "alt":"3D nail Art",
+        "overlay" : "Summer Flower",
+        "image" : "./media/3D3.png"
+
+    },
+
+    {
+        "category":"3D",
+        "alt":"3D nail Art",
+        "overlay" : "White Floral",
+        "image" : "./media/3D4.png"
+
+    },
+
+    {
+        "category":"bridal",
+        "alt":"Bridal Nail Art",
+        "overlay" : "Matte Finnish",
+        "image" : "./media/bridal1.png"
+
+    },
+
+    {
+        "category":"bridal",
+        "alt":"Bridal Nail Art",
+        "overlay" : "Rhinsetone Embllishments",
+        "image" : "./media/bridal2.png"
+
+    },
+
+    {
+        "category":"bridal",
+        "alt":"Bridal Nail Art",
+        "overlay" : "Gold Art",
+        "image" : "./media/bridal3.png"
+
+    },
+
+    {
+        "category":"bridal",
+        "alt":"Bridal Nail Art",
+        "overlay" : "Simple & Unique",
+        "image" : "./media/bridal4.png"
+
+    },
+
+    {
+        "category":"teens",
+        "alt":"French Tips",
+        "overlay" : "Classic French",
+        "image" : "./media/Teens1.png"
+
+    },
+
+    {
+        "category":"teens",
+        "alt":"French Tips",
+        "overlay" : "Daisy French",
+        "image" : "./media/Teens2.png"
+
+    },
+
+    {
+        "category":"teens",
+        "alt":"French Tips",
+        "overlay" : "Pink Bloom",
+        "image" : "./media/Teens3.png"
+
+    },
+
+    {
+        "category":"teens",
+        "alt":"French Tips",
+        "overlay" : "Simple Acrylic",
+        "image" : "./media/Teens4.png"
+
+    }
+
+]

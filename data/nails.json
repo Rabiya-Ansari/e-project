@@ -1,0 +1,63 @@
+[
+    {
+        "id": 1,
+        "name" : "Geometric Design",
+        "detail":"Paint bold geometric triangles and diagonal lines in metallic gold over a deep burgundy base",
+        "image" : "./media/geometricnail.png"
+    },
+    
+    {
+        "id": 2,
+        "name" : "Floral Design",
+        "detail" : "Delicate Blooms Tiny pink roses with green vine accents on a soft nude base for a romantic touch",
+        "image" : "./media/floralnail.png"
+    },
+
+    
+    {
+        "id": 3,
+        "name" : "French Redefined",
+        "detail":"French redefined nails modernize the classic look with bold colors and stylish tip designs.",
+        "image" : "./media/frenchnail.png"
+    },
+
+     {
+        "id": 4,
+        "name" : "Kids Nail Design ",
+        "detail": "Kids nail designs turn tiny nails into playful art using bright colors and child-safe, fun themes",
+        "image" : "./media/kidsnail.png"
+    },
+
+     {
+        "id": 5,
+        "name" : "Glitter Design",
+        "detail":"Glitter nail art adds a sparkling touch of glamour, turning every nail into a dazzling statement piece.",
+        "image" : "./media/gliternail.png"
+
+    },
+
+    {
+        "id": 6,
+        "name" : "Teen Design",
+        "detail":"Teen nail designs blend trendy styles with bold creativity, reflecting youthful energy and personal flair.",
+        "image" : "./media/teensnail.png"
+
+    },
+
+    {
+        "id": 7,
+        "name" : "Rainbow Design",
+        "detail":"Rainbow nail designs burst with vibrant colors, blending every hue into a playful and eye-catching masterpiece.",
+        "image" : "./media/rainbownail.png"
+
+    },
+
+    {
+        "id": 8,
+        "name" : "Emoji Design",
+        "detail":" nail art transforms nails into a lively canvas, capturing animated charm and youthful imagination in every design.",
+        "image" : "./media/emojinail.png"
+
+    }
+
+]

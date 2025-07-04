@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root{
+    --Darkmehroon:#3A0519;
+    --Beetroot:#670D2F;
+    --Plum:#A53860;
+    --Palepink:#EF88AD;
+    --Lightpink:#ebd1da;
+    --gradient:(#6f0000, #000000);
+    --brand-red: #a80000;
+    --brand-red-dark: #2d0c08;
+
+}
+
+*{
+    font-family:  "Poppins", sans-serif;
+}
+
+.body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: url('./media/bg.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Navbar */
+
+.navbar {
+  background: linear-gradient(#6f0000, #000000);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.logo img {
+  width: 100px;
+  filter: invert(1);
+}
+
+.navbar-item ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  list-style: none;
+  margin: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+}
+.navbar ul li a:hover {
+  color:#ffcc00 ; 
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+/* Toggle icon */
+.toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: linear-gradient(#6f0000, #000000);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  left: 0;
+  padding: 10px 0;
+  z-index: 99;
+  text-align: center;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  color:white;
+  padding: 10px 0;
+  display: block;
+}
+
+
+/* Slider */
+.carousel-caption h1 {
+  color: #6f0000;
+}
+
+/* About Section */
+
+.about-container.home-about {
+  background: linear-gradient(#6f0000, #ee9ca7);
+  animation: fadeIn 0.6s ease-in;
+}
+
+.about-container {
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 45px;
+  background: none; 
+}
+
+.about-container.home-about .about-text {
+  color: white;
+}
+
+.about-container .about-text {
+  color: black;
+}
+.about-container .about-text h2{
+  text-align: center;
+}
+
+.about-container .about-image img {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* Cards start */
+
+.design-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    padding: 40px;
+    place-items: center;
+}
+
+.design-cards .card {
+    border: 1px solid lightgray;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    border-radius: 8px;              
+    overflow: hidden;                
+}
+
+#design-cards-heading, #accessories-heading {
+  padding-inline: 50px;
+  padding-block: 40px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Hover effect */
+.design-cards .card:hover {
+    transform: translateY(-8px) scale(1.03); 
+    box-shadow: 0 12px 24px#EF88AD;
+}
+
+
+.design-cards .card .card-img img {
+    width: 100%;
+    display: block;
+}
+
+.design-cards .card .card-detail {
+    padding: 10px;
+}
+
+/* Accessories */
+.heading h2 {
+  text-align: center;
+  color: black;
+  font-style: italic;
+}
+.product-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  padding: 40px;
+  place-items: center;
+
+}
+.product-container .product {
+  border: 1px solid lightgray;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    border-radius: 8px;              
+    overflow: hidden;     
+}
+
+.product-container .product span{
+  color:#242495;
+}
+.product:hover {
+  transform: translateY(-8px) scale(1.03); 
+  box-shadow: 0 12px 24px#EF88AD;
+}
+
+.product-img img {
+   width: 100%;
+    display: block;
+}
+
+.product-detail {
+  text-align: center;
+  padding: 10px;
+}
+
+.product-detail p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.price {
+  font-weight: bold;
+  color: #e91e63;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Gallery Section */
+
+.gallery-section {
+  padding: 40px;
+  max-width: 1500px;
+  text-align: center;
+}
+
+.gallery-section h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #333;
+  font-style: italic;
+}
+
+.filter-buttons {
+  margin-bottom: 30px;
+}
+
+.filter-buttons button {
+  background: #c31432;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+
+.filter-buttons button.active,
+.filter-buttons button:hover {
+  background: #fc4a1a;
+  color: white;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item .overlay {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(#6f0000, #000000);
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+}
+/* Nails Care */
+.nail-care-section.home-nailcare{
+  background: linear-gradient(to right, #870000,#000000);
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+.nail-care-section{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+.nail-care-content h2{
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-style: italic;
+  color: black;
+}
+
+
+.nail-care-content {
+  flex: 1 1 300px;
+  max-width: 600px;
+}
+
+.nail-care-content.home-heading h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-style: italic;
+  color: white;
+}
+.nail-care-list  li{
+  list-style-type: none;
+}
+
+.nail-care-content p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.nail-care-list {
+  list-style: disc inside;
+  padding-left: 0;
+}
+
+.nail-care-list li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.nail-care-image {
+  flex: 1 1 250px;
+  max-width: 400px;
+}
+
+.nail-care-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, border-radius 0.4s ease;
+  object-fit: cover;
+}
+.nail-care-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Feedback */
+
+.feedback-section {
+  padding-block: 45px;
+}
+
+.feedback-section .glass-container {
+  width: 40%;
+  margin: auto;
+}
+
+.feedback-section .glass-container .glass-form {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 45px;
+}
+
+.feedback-section .glass-container .glass-form h1 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.feedback-section .glass-container .glass-form .input-group {
+  margin-bottom: 15px;
+}
+
+.feedback-section .glass-container .glass-form .input-group input,
+.feedback-section .glass-container .glass-form .input-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.feedback-section .glass-container .glass-form .input-group input:focus,
+.feedback-section .glass-container .glass-form .input-group textarea:focus {
+  outline: none;
+  border: 1px solid #870000;
+}
+
+.feedback-section .glass-container .glass-form .input-group textarea {
+  resize: none;
+  min-height: 100px;
+}
+
+.feedback-section .glass-container .glass-form button {
+  width: 100%;
+  margin-top: 15px;
+  background: linear-gradient(#870000, #190A05);
+  border: none;
+  color: var(--Lightpink);
+  padding-block: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.feedback-section .glass-container .glass-form button:hover {
+  background: linear-gradient(#a80000, #2d0c08);
+}
+
+
+/* Feedback */
+
+/* Contact  Start*/
+.contact-grid {
+  display: grid;
+  gap: 2rem;          
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(168, 0, 0, 0.1); 
+  background-color: #fff; 
+  margin:20px;
+}
+.contact-heading{
+  text-align: center;
+  font-style: italic;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 5px rgba(168, 0, 0, 0.2); 
+  transition: box-shadow 0.3s ease;
+}
+.form-input:focus { box-shadow: 0 0 8px rgba(168, 0, 0, 0.5); }
+#textarea-input { resize: none; }
+
+.submit-button {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(#a80000, #2d0c08);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+.submit-button:hover { opacity: 0.9; }
+
+.map-container iframe {
+  width: 100%;
+  height: 260px;
+  border: 0;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(168, 0, 0, 0.15);
+}
+
+/* Contact End */
+
+/* Footer */
+footer {
+    background: linear-gradient(#870000, #190A05);
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding: 50px;
+}
+
+footer h3 {
+    margin-bottom: 10px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: #ffcc00; 
+}
+
+.news-letter {
+    display: flex;
+    flex-direction: column;
+}
+
+#input-field {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 10px;
+}
+
+.mybtn {
+    margin: auto;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #ffcc00; /* Button color */
+    color: #190A05; /* Text color */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.mybtn:hover {
+    background-color: #e6b800; /* Darker shade on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* navbar */
+@media (max-width: 768px) {
+  .navbar-item {
+    display: none; 
+  }
+
+  .toggle {
+    display: block; 
+  }
+
+  .mobile-menu.show {
+    display: flex; 
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 552px){
+    .design-cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .about-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    #accessories {
+      grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .feedback-section .glass-container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 768px) {
+  .feedback-section .glass-container {
+    width: 80%;
+    padding: 20px;
+  }
+
+  .feedback-section .glass-container .glass-form {
+    padding: 30px;
+  }
+
+  .feedback-section .glass-container .glass-form h1 {
+    font-size: 24px;
+  }
+
+  .feedback-section .glass-container .glass-form button {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .feedback-section .glass-container {
+    width: 90%;
+  }
+
+  .feedback-section .glass-container .glass-form {
+    padding: 20px;
+  }
+
+  .feedback-section .glass-container .glass-form h1 {
+    font-size: 20px;
+  }
+
+  .feedback-section .glass-container .glass-form .input-group input,
+  .feedback-section .glass-container .glass-form .input-group textarea {
+    font-size: 14px;
+  }
+
+  .feedback-section .glass-container .glass-form button {
+    font-size: 14px;
+  }
+}
+
+/* contact section */
+
+@media (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+    align-items:center;   
+  }
+}
+
+@media (max-width: 480px) {
+  .map-container { order: 1; }
+}
