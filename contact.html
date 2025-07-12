@@ -20,7 +20,7 @@
 </head>
 <body>
       <!-- Navbar Start -->
-  <div class="navbar">
+    <div class="navbar">
     <div class="logo">
       <img src="./media/logo.png" alt="">
     </div>
@@ -29,10 +29,13 @@
       <ul>
         <li><a href="./index.html">Home</a></li>
         <li><a href="./about.html">About</a></li>
-        <li><a href="./design.html">Design</a></li>
-        <li><a href="./accessories.html">Accessories</a></li>
+        <select name="" id="dropdown" onchange=" redirectToPage(this.value)">
+          <option value="" >Options</option>
+          <option value="./accessories.html">Accessories</option>
+          <option value="./design.html">Design</option>
+          <option value="nailcare.html">Nail Care</option>
+        </select>
         <li><a href="./gallery.html">Gallery</a></li>
-        <li><a href="./nailcare.html">Nail Care</a></li>
         <li><a href="./feedback.html">Feedback</a></li>
         <li><a href="./contact.html">Contact</a></li>
       </ul>
@@ -65,12 +68,12 @@
   <h2 class="contact-heading">Contact Us</h2>
 
   <div class="contact-grid">
-    <form class="contact-form">
-      <input type="text" placeholder="Name" class="form-input" />
-      <input type="email" placeholder="Email" class="form-input" />
-      <textarea placeholder="Message" rows="5"  id="textarea-input" class="form-input"></textarea>
-      <button type="submit" class="submit-button">Send Message</button>
-    </form>
+    <div class="contact-address">
+      <h3>Address</h3>
+      <p><i class="ri-building-line"></i> Shahrah e  faisal aptech karachi.</p>
+      <p><i class="ri-phone-line"></i>(123)-345-768</p>
+      <p><i class="ri-mail-ai-line"></i>abcd@gmail.com</p>
+    </div>
 
     <!-- Google Map -->
     <div class="map-container">
@@ -86,29 +89,29 @@
 
   <!-- Footer Start -->
 
-  <footer>
+ <footer>
     <div class="social-links">
       <h3>Social Links</h3>
-      <p>Facebook</p>
-      <p>Instagram</p>
-      <p>Twiiter/X</p>
-      <p>Linkedin</p>
+      <p><a href="https://www.facebook.com" target="_blank"><i class="ri-facebook-circle-line"></i> Facebook</a></p>
+      <p><a href="https://www.instagram.com" target="_blank"><i class="ri-instagram-line"></i> Instagram</a></p>
+      <p><a href="https://www.twitter.com" target="_blank"><i class="ri-twitter-line"></i> Twitter/X</a></p>
+      <p><a href="https://www.linkedin.com" target="_blank"><i class="ri-linkedin-box-line"></i> Linkedin</a></p>
+
     </div>
 
     <div class="quick-links">
       <h3>Quick Links</h3>
-      <p>Home</p>
-      <p>About</p>
-      <p>Services</p>
-      <p>Contact</p>
+      <p><a href="./index.html">Home</a></p>
+      <p><a href="./about.html">About</a></p>
+      <p><a href="./accessories.html">Accessories</a></p>
+      <p><a href="./design.html">Designs</a></p>
     </div>
 
     <div class="relevant-infos">
       <h3>Info</h3>
-      <p>Nail Care Tips</p>
-      <p>Top Rated</p>
-      <p>Our Designs</p>
-      <p>Our Nail Art Gallery</p>
+      <p><a href="./nailcare.html">Nail Care Tips</a></p>
+      <p><a href="./gallery.html">Our Nail Art Gallery</a></p>
+      <p><a href="./design.html">Our Designs</a></p>
     </div>
 
     <div class="news-letter">

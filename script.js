@@ -26,6 +26,13 @@ fetch("./data/nails.json")
     });
 })
 
+// dropdown
+function redirectToPage(url){
+  if (url !==""){
+    window.location.href = url;
+  }
+}
+
 // Accessories
 
 fetch("./data/accessories.json")
