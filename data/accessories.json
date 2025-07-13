@@ -1,72 +1,66 @@
 [
-    {
-        "id": 1,
-        "name" : "Stone",
-        "detail":"Paint bold geometric triangles and diagonal lines in metallic gold over a deep burgundy base",
-        "image" : "./media/product1.png",
-        "price":"599.99"
-    },
-    
-    {
-        "id": 2,
-        "name" : "Dead Skin removal",
-        "detail" : "Delicate Blooms Tiny pink with green accents on a soft nude base for a romantic, feminine touch",
-        "image" : "./media/product2.png",
-         "price":"599.99"
-
-    },
-
-    
-    {
-        "id": 3,
-        "name" : "Different acrylic Nails",
-        "detail":"French redefined nails modernize the classic look with bold colors and stylish tip designs.",
-        "image" : "./media/product3.png",
-         "price":"599.99"
-
-    },
-
-     {
-        "id": 4,
-        "name" : "Nail Polishes ",
-        "detail": "Kids nail designs turn tiny nails into playful art using bright colors and child-safe, fun themes",
-        "image" : "./media/product4.png",
-         "price":"599.99"
-
-    },
-
-     {
-        "id": 5,
-        "name" : "Floral Nails",
-        "detail":"Glitter nail art adds a sparkling touch of glamour, turning every nail into a dazzling statement piece.",
-        "image" : "./media/product5.png",
-         "price":"599.99"
-
-    },
-
-    {
-        "id": 6,
-        "name" : "Butterfly Nails",
-        "detail":"Teen nail designs blend trendy styles with bold creativity, reflecting youthful energy and personal flair.",
-        "image" : "./media/product6.png",
-         "price":"599.99"
-
-    },
-
-    {
-        "id": 7,
-        "name" : "Nails printer",
-        "detail":"Rainbow nail designs burst with vibrant colors, blending every hue into a playful and eye-catching masterpiece.",
-        "image" : "./media/product7.png",
-         "price":"599.99"
-    },
-
-    {
-        "id": 8,
-        "name" : "Different Nails Design",
-        "detail":"nail art transforms nails into a lively canvas, capturing animated charm and youthful imagination in design.",
-        "image" : "./media/product8.png",
-         "price":"599.99"
-    }
-
+  {
+    "id": 1,
+    "name": "Stone",
+    "detail": "Paint bold geometric triangles and diagonal lines in metallic gold over a deep burgundy base",
+    "image": "./media/product1.png",
+    "price": "549.99",
+    "oldPrice": "699.99"
+  },
+  {
+    "id": 2,
+    "name": "Dead Skin removal",
+    "detail": "Delicate Blooms Tiny pink with green accents on a soft nude base for a romantic, feminine touch",
+    "image": "./media/product2.png",
+    "price": "399.99",
+    "oldPrice": "499.99"
+  },
+  {
+    "id": 3,
+    "name": "Different acrylic Nails",
+    "detail": "French redefined nails modernize the classic look with bold colors and stylish tip designs.",
+    "image": "./media/product3.png",
+    "price": "649.99",
+    "oldPrice": "749.99"
+  },
+  {
+    "id": 4,
+    "name": "Nail Polishes",
+    "detail": "Kids nail designs turn tiny nails into playful art using bright colors and child-safe, fun themes",
+    "image": "./media/product4.png",
+    "price": "299.99",
+    "oldPrice": "399.99"
+  },
+  {
+    "id": 5,
+    "name": "Floral Nails",
+    "detail": "Glitter nail art adds a sparkling touch of glamour, turning every nail into a dazzling statement piece.",
+    "image": "./media/product5.png",
+    "price": "599.99",
+    "oldPrice": "699.99"
+  },
+  {
+    "id": 6,
+    "name": "Butterfly Nails",
+    "detail": "Teen nail designs blend trendy styles with bold creativity, reflecting youthful energy and personal flair.",
+    "image": "./media/product6.png",
+    "price": "449.99",
+    "oldPrice": "549.99"
+  },
+  {
+    "id": 7,
+    "name": "Nails printer",
+    "detail": "Rainbow nail designs burst with vibrant colors, blending every hue into a playful and eye-catching masterpiece.",
+    "image": "./media/product7.png",
+    "price": "1299.99",
+    "oldPrice": "1499.99"
+  },
+  {
+    "id": 8,
+    "name": "Different Nails Design",
+    "detail": "Nail art transforms nails into a lively canvas, capturing animated charm and youthful imagination in design.",
+    "image": "./media/product8.png",
+    "price": "699.99",
+    "oldPrice": "799.99"
+  }
 ]

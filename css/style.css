@@ -11,7 +11,8 @@
     --gradient:(#6f0000, #000000);
     --brand-red: #a80000;
     --brand-red-dark: #2d0c08;
-
+    --primary: linear-gradient(135deg, #6f0000, #b82e5f);
+    --shade: #FFF6F6;
 }
 
 *{
@@ -33,19 +34,17 @@
 /* Navbar */
 
 .navbar {
-  background: linear-gradient(#6f0000, #000000);
+ background: var(--primary);
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
   flex-wrap: wrap;
-  position: relative;
+  padding-inline: 30px;
 }
 
 .logo img {
-  width: 100px;
-  filter: invert(1);
+  width: 3rem;
 }
 
 .navbar-item ul {
@@ -60,7 +59,6 @@
   margin: 20px;
   font-size: 14px;
   font-weight: 500;
-  cursor: pointer;
 }
 .navbar ul li a{
   text-decoration: none;
@@ -71,24 +69,49 @@
   font-weight: bold;
   transition: color 0.3s ease;
 }
-#dropdown{
-  background:linear-gradient(#6f0000, #000000) ;
-  color: white;
-  font-size: 14px;
-  font-weight: 500;
-  border: none;
-}
-#dropdown:hover{
-  color:#ffcc00 ; 
-  font-weight: bold;
-}
-#dropdown option{
-  background-color: var(--Darkmehroon);
-  color: white;
-  border: none;
-  padding: 5px;
+.dropdown {
+  position: relative;
+  z-index: 50;
 }
 
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: var(--primary);
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  list-style: none;
+  padding: 0.5rem 0;
+  display: none !important;
+  z-index: 100 !important;
+  min-width: 160px;
+}
+
+.dropdown-menu li {
+  margin: 0;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #ffcc00;
+  color: black;
+  font-weight: bold;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block !important;
+  z-index: 100 !important;
+}
 
 
 .navbar ul li:hover {
@@ -128,37 +151,45 @@
 
 /* Slider */
 .carousel-caption h1 {
-  color: #6f0000;
+  color: var(--shade);
+  font-weight: bold;
 }
 
 /* About Section */
 
 .about-container.home-about {
-  background: linear-gradient(#6f0000, #ee9ca7);
+  background: #FFF6F6;
   animation: fadeIn 0.6s ease-in;
 }
 
 .about-container {
   display: grid;
-  place-items: center;
   grid-template-columns: repeat(2, 1fr);
-  padding: 45px;
-  background: none; 
+  place-items: center;
+  padding-inline: 5rem;
+  padding-block: 5rem;
+  gap: 2rem;
 }
 
 .about-container.home-about .about-text {
-  color: white;
-}
-
-.about-container .about-text {
   color: black;
 }
-.about-container .about-text h2{
-  text-align: center;
+
+.about-container .about-text h2 {
+  text-align: left;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 3px;
+  text-decoration-style: double;
+  margin-bottom: 40px;
+  font-weight: bold;
 }
 
 .about-container .about-image img {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
 }
 
 /* Cards start */
@@ -181,11 +212,11 @@
     overflow: hidden;                
 }
 
-#design-cards-heading, #accessories-heading {
-  padding-inline: 50px;
-  padding-block: 40px;
+#design-cards-heading, #accessories-heading, .about-container h2 {
   text-align: center;
-  font-style: italic;
+  font-weight: bold;
+  margin-top: 25px;
+  text-transform: uppercase;
 }
 
 /* Hover effect */
@@ -202,14 +233,15 @@
 
 .design-cards .card .card-detail {
     padding: 10px;
+    font-size: 15px;
+}
+
+.design-cards .card .card-detail h4 {
+  font-weight: bold;
 }
 
 /* Accessories */
-.heading h2 {
-  text-align: center;
-  color: black;
-  font-style: italic;
-}
+
 .product-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -242,8 +274,11 @@
 }
 
 .product-detail {
-  text-align: center;
   padding: 10px;
+}
+
+.product-detail h4 {
+  font-weight: bold;
 }
 
 .product-detail p {
@@ -251,11 +286,25 @@
   margin-bottom: 8px;
 }
 
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-container div i {
+  font-size: 20px;
+}
+
 .price {
   font-weight: bold;
-  color: #e91e63;
   display: block;
   margin-bottom: 10px;
+}
+
+.oldPrice {
+  color: red !important;
+  text-decoration: line-through;
 }
 
 /* Gallery Section */
@@ -268,9 +317,9 @@
 
 .gallery-section h2 {
   font-size: 35px;
-  margin-bottom: 20px;
   color: #333;
-  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .filter-buttons {
@@ -278,20 +327,19 @@
 }
 
 .filter-buttons button {
-  background: #c31432;
-  color: white;
+  background-color: transparent;
   border: none;
-  padding: 10px 20px;
-  margin: 5px;
-  cursor: pointer;
-  border-radius: 15px;
-  transition: 0.3s;
 }
 
-.filter-buttons button.active,
-.filter-buttons button:hover {
-  background: #fc4a1a;
-  color: white;
+.filter-buttons button:focus {
+  outline: none;
+}
+
+.filter-buttons button.active {
+  text-decoration: underline;
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+  text-decoration-color: var(--Darkmehroon);
 }
 
 .gallery-grid {
@@ -322,23 +370,26 @@
 .gallery-item .overlay {
   position: absolute;
   bottom: 0;
-  background: linear-gradient(#6f0000, #000000);
-  color: white;
+  background: var(--shade);
+  color: #333;
   width: 100%;
   text-align: center;
   padding: 10px;
   font-size: 16px;
+  border-bottom: 1px solid lightgray;
+  box-shadow: 0 4px 12px rgba(211, 211, 211, 0.6); /* lightgray */
 }
 /* Nails Care */
 .nail-care-section.home-nailcare{
-  background: linear-gradient(to right, #870000,#000000);
-  color: white;
+  background: var(--shade);
+  color: black;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 30px;
-  padding: 40px;
+   padding-inline: 5rem;
+  padding-block: 5rem;
 }
 .nail-care-section{
   display: flex;
@@ -349,10 +400,13 @@
   padding: 40px;
 }
 .nail-care-content h2{
-  font-size: 2rem;
   margin-bottom: 10px;
-  font-style: italic;
-  color: black;
+  color: black !important;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 10px;
+  text-decoration-style: double;
 }
 
 
@@ -362,10 +416,8 @@
 }
 
 .nail-care-content.home-heading h2 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  font-style: italic;
-  color: white;
+  margin-bottom: 40px;
+  color: black;
 }
 .nail-care-list  li{
   list-style-type: none;
@@ -420,10 +472,10 @@
   padding: 45px;
 }
 
-.feedback-section .glass-container .glass-form h1 {
+.feedback-section .glass-container .glass-form h2 {
   text-align: center;
-  font-size: 28px;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .feedback-section .glass-container .glass-form .input-group {
@@ -435,7 +487,6 @@
   width: 100%;
   padding: 10px;
   border: 1px solid lightgrey;
-  border-radius: 5px;
   font-size: 16px;
 }
 
@@ -453,7 +504,7 @@
 .feedback-section .glass-container .glass-form button {
   width: 100%;
   margin-top: 15px;
-  background: linear-gradient(#870000, #190A05);
+  background: var(--primary);
   border: none;
   color: var(--Lightpink);
   padding-block: 10px;
@@ -471,9 +522,16 @@
 /* Feedback */
 
 /* Contact  Start*/
+
+.contact-section {
+  margin-top: 35px;
+}
+
 .contact-grid {
   display: grid;
   gap: 2rem;          
+  padding-inline: 4rem;
+  padding-block: 2rem;
 }
 
 .contact-address {
@@ -509,7 +567,9 @@
 
 .contact-heading{
   text-align: center;
-  font-style: italic;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-transform: uppercase;
 }
 
 .form-input {
@@ -550,7 +610,7 @@
 
 /* Footer */
 footer {
-    background: linear-gradient(#870000, #190A05);
+    background: var(--primary);;
     color: white;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -603,16 +663,6 @@ footer a:hover {
     background-color: #e6b800; 
 }
 
-
-
-
-
-
-
-
-
-
-
 /* navbar */
 @media (max-width: 768px) {
   .navbar-item {
@@ -628,15 +678,30 @@ footer a:hover {
   }
 }
 
+/* About */
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    padding-inline: 1.5rem;
+    padding-block: 3rem;
+    text-align: center;
+  }
 
+  .about-container .about-text h2 {
+    text-align: center;
+  }
+
+  .about-container .about-image img {
+    width: 100%;
+    max-width: 90vw;
+    margin-top: 1.5rem;
+  }
+}
 
 
 
 @media screen and (max-width: 552px){
     .design-cards {
-      grid-template-columns: repeat(1, 1fr);
-    }
-    .about-container {
       grid-template-columns: repeat(1, 1fr);
     }
 

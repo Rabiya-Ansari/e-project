@@ -11,7 +11,7 @@ fetch("./data/nails.json")
     let nailVar = "";
     data.forEach(nail => {
         nailVar += `
-         <div class="card">
+         <div class="card" data-aos="fade-up" data-aos-duration="3000">
       <div class="card-img">
         <img src="${nail.image}" alt="">
       </div>
@@ -41,7 +41,7 @@ fetch("./data/accessories.json")
     let accessoriesVar = "";
     data.forEach(accessories => {
         accessoriesVar += `
-        <div class="product">
+        <div class="product" data-aos="fade-up" data-aos-duration="3000">
                <div class="product-img">
                 <img src="${accessories.image}" alt="">
               </div>
@@ -49,7 +49,16 @@ fetch("./data/accessories.json")
            <div class="product-detail">
              <h4>${accessories.name}</h4>
              <p>${accessories.detail}</p>
-              <span>${accessories.price}</span>
+              
+              <div class="price-container">
+                <div>
+                <span>${accessories.price}</span>
+                <span class="oldPrice">${accessories.oldPrice}</span>
+                </div>
+                <div>
+              <i class="ri-shopping-basket-2-line"></i>
+              </div>
+              </div>
            </div>
       </div>
 
@@ -73,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function () {
         div.className = `gallery-item ${item.category}`;
         div.innerHTML = `
           <img src="${item.image}" alt="${item.alt}" />
-          <div class="overlay">${item.overlay}</div>
+          <div class="overlay" data-aos="fade-up" data-aos-duration="1000">${item.overlay}</div>
         `;
         container.appendChild(div);
       });
