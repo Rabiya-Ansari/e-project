@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessory Detail</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar Start -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="./media/logo.png" alt="Logo">
+        </div>
+
+        <div class="navbar-item">
+            <ul class="menu">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+
+                <!-- Custom Dropdown -->
+                <li class="dropdown">
+                    <a href="javascript:void(0)">Categories ▾</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="./accessories.html">Accessories</a></li>
+                        <li><a href="./design.html">Design</a></li>
+                        <li><a href="./nailcare.html">Nail Care</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="toggle" id="menuToggle" onclick="toggleMenu()">
+            <i class="ri-menu-3-line"></i>
+        </div>
+
+        <!-- Mobile Dropdown Menu -->
+        <div id="mobileMenu" class="mobile-menu">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./design.html">Designs</a>
+            <a href="./accessories.html">Accessories</a>
+            <a href="./nailcare.html">Nail Care</a>
+            <a href="./gallery.html">Gallery</a>
+            <a href="./feedback.html">Feedback</a>
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <div class="container">
+        <button onclick="history.back()" class="goBackBTN">Go Back</button>
+        <div id="accessory-detail">
+
+        </div>
+    </div>
+
+    <!-- Footer Start -->
+
+    <footer>
+        <div class="social-links">
+            <h3>Social Links</h3>
+            <p><a href="https://www.facebook.com" target="_blank"><i class="ri-facebook-circle-line"></i> Facebook</a>
+            </p>
+            <p><a href="https://www.instagram.com" target="_blank"><i class="ri-instagram-line"></i> Instagram</a></p>
+            <p><a href="https://www.twitter.com" target="_blank"><i class="ri-twitter-line"></i> Twitter/X</a></p>
+            <p><a href="https://www.linkedin.com" target="_blank"><i class="ri-linkedin-box-line"></i> Linkedin</a></p>
+
+        </div>
+
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <p><a href="./index.html">Home</a></p>
+            <p><a href="./about.html">About</a></p>
+            <p><a href="./accessories.html">Accessories</a></p>
+            <p><a href="./design.html">Designs</a></p>
+        </div>
+
+        <div class="relevant-infos">
+            <h3>Info</h3>
+            <p><a href="./nailcare.html">Nail Care Tips</a></p>
+            <p><a href="./gallery.html">Our Nail Art Gallery</a></p>
+            <p><a href="./design.html">Our Designs</a></p>
+        </div>
+
+        <div class="news-letter">
+            <h3>News Letter</h3>
+            <input type="text" id="input-field" placeholder="Write here....">
+
+            <br>
+
+            <button class="mybtn"> send me</button>
+        </div>
+    </footer>
+
+    <!-- Footer End-->
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
