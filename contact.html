@@ -28,99 +28,107 @@
   <body>
     <!-- Navbar Start -->
     <div class="navbar">
-      <div class="logo">
-        <img src="./media/logo.png" alt="Logo">
-      </div>
+  <div class="logo">
+    <img src="./media/logo.png" alt="Logo">
+  </div>
 
-      <div class="navbar-item">
-        <ul class="menu">
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About</a></li>
+  <div class="navbar-item">
+    <ul class="menu">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./about.html">About</a></li>
 
-          <!-- Custom Dropdown -->
-          <li class="dropdown">
-            <a href="javascript:void(0)">Categories ▾</a>
-            <ul class="dropdown-menu">
-              <li><a href="./accessories.html">Accessories</a></li>
-              <li><a href="./design.html">Design</a></li>
-              <li><a href="./nailcare.html">Nail Care</a></li>
-            </ul>
-          </li>
-
-          <li><a href="./gallery.html">Gallery</a></li>
-          <li><a href="./feedback.html">Feedback</a></li>
-          <li><a href="./contact.html">Contact</a></li>
+      <!-- Custom Dropdown -->
+      <li class="dropdown">
+        <a href="javascript:void(0)">Categories ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="./accessories.html">Accessories</a></li>
+          <li><a href="./design.html">Design</a></li>
+          <li><a href="./nailcare.html">Nail Care</a></li>
+          <li><a href="./nailpowder.html">Nail Powder</a></li>
+          <li><a href="./nailgel.html">Nail Gel</a></li>
         </ul>
-      </div>
+      </li>
 
-      <div class="toggle" id="menuToggle" onclick="toggleMenu()">
-        <i class="ri-menu-3-line"></i>
-      </div>
+      <li><a href="./gallery.html">Gallery</a></li>
+      <li><a href="./contact.html">Contact</a></li>
+    </ul>
+  </div> 
 
-      <!-- Mobile Dropdown Menu -->
-      <div id="mobileMenu" class="mobile-menu">
-        <a href="./index.html">Home</a>
-        <a href="./about.html">About</a>
-        <a href="./design.html">Designs</a>
-        <a href="./accessories.html">Accessories</a>
-        <a href="./nailcare.html">Nail Care</a>
-        <a href="./gallery.html">Gallery</a>
-        <a href="./feedback.html">Feedback</a>
-        <a href="./contact.html">Contact</a>
-      </div>
-    </div>
+  <div class="toggle" id="menuToggle" onclick="toggleMenu()">
+    <i class="ri-menu-3-line"></i>
+  </div>
+
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobileMenu" class="mobile-menu">
+    <a href="./index.html">Home</a>
+    <a href="./about.html">About</a>
+    <a href="./design.html">Designs</a>
+    <a href="./accessories.html">Accessories</a>
+    <a href="./nailcare.html">Nail Care</a>
+    <a href="./gallery.html">Gallery</a>
+    <a href="./contact.html">Contact</a>
+  </div>
+</div>
     <!-- Navbar End -->
 
     <!-- Contact Section -->
-    <section class="contact-section">
-      <h2 class="contact-heading">React Out</h2>
+   <section class="contact-section">
+  <h2 class="contact-heading">React Out</h2>
 
-      <div class="contact-grid">
-        <div class="contact-address" data-aos="fade-left"
-          data-aos-duration="3000">
-          <h3>Address</h3>
-          <p><i class="ri-building-line"></i> Shahrah e faisal aptech
-            karachi.</p>
-          <p><i class="ri-phone-line"></i>(123)-345-768</p>
-          <p><i class="ri-mail-ai-line"></i>abcd@gmail.com</p>
-        </div>
-
-        <!-- Google Map -->
-        <div class="map-container" data-aos="fade-right"
-          data-aos-duration="3000">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7240.133643512074!2d67.07658029471067!3d24.861567261713947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d24.884688099999998!2d67.0579857!4m5!1s0x3eb33eefd1f57fa1%3A0x7f8ebca85b94f654!2sHussaini%20Society!3m2!1d24.8859426!2d67.0591187!5e0!3m2!1sen!2s!4v1751568281374!5m2!1sen!2s"
-            width="600" height="450" style="border:0;" allowfullscreen
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-
-          </iframe>
-
+  <div class="contact-grid">
+    <div class="contact-address" data-aos="fade-left" data-aos-duration="3000">
+      <h3>Address</h3>
+      <p><i class="ri-building-line"></i> Shahrah e  faisal aptech karachi.</p>
+      <p><i class="ri-phone-line"></i>(123)-345-768</p>
+      <p><i class="ri-mail-ai-line"></i>abcd@gmail.com</p>
+      <!-- Feedback Section -->
+      <button class="feeeback-btn" onclick="openPopup()">Send Feedback</button>
+      <div class="popup" id="feedback">
+        <div class="popup-box">
+          <button class="close-btn" onclick="closePopup()">×</button>
+          <h3>Feedback Form</h3>
+          <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="" rows="4" required></textarea>
+            <button type="submit">Submit</button>
+          </form>
         </div>
       </div>
-    </section>
+    </div>
 
+    <!-- Google Map -->
+    <div class="map-container" data-aos="fade-right" data-aos-duration="3000">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d7240.133643512074!2d67.07658029471067!3d24.861567261713947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d24.884688099999998!2d67.0579857!4m5!1s0x3eb33eefd1f57fa1%3A0x7f8ebca85b94f654!2sHussaini%20Society!3m2!1d24.8859426!2d67.0591187!5e0!3m2!1sen!2s!4v1751568281374!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+      </iframe>
+      
+    </div>
+  </div>
+</section>
     <!-- Contact Section End-->
 
     <!-- Footer Start -->
 
-     <footer>
+    <footer>
     <div class="footer-column categories">
       <h3>CATEGORIES</h3>
       <ul>
-        <li>Acrylic</li>
-        <li>Teens</li>
-        <li>Bold</li>
-        <li>Emojis</li>
+        <li><a href="./accessories.html">Accessories</a></li>
+        <li><a href="./design.html">Design</a></li>
+        <li><a href="./nailcare.html">Nail Care</a></li>
+        <li><a href="./nailpowder.html">Nail Powder Product</a></li>
+        <li><a href="./nailgel.html">Gel Nail Product</a></li>
       </ul>
     </div>
 
     <div class="footer-column info">
       <h3>INFO</h3>
       <ul>
-        <li>Nail Care</li>
-        <li>Gallery</li>
-        <li>Designs</li>
-        <li>Accessories</li>
+        <li><a href="./nailcare.html">Nail Care</a></li>
+        <li><a href="./gallery.html">Gallery</a></li>
+        <li><a href="./design.html">Designs</a></li>
+        <li><a href="./accessories.html">Accessories</a></li>
       </ul>
     </div>
 
