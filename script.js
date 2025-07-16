@@ -174,9 +174,26 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Feedback Section
-function openPopup(){
-  document.getElementById("feedback").style.display = "flex";
-}
-function closePopup(){
-  document.getElementById("feedback").style.display = "none";
-}
+function openPopup() {
+    document.getElementById("feedback").style.display = "flex";
+  }
+
+  function closePopup() {
+    document.getElementById("feedback").style.display = "none";
+  }
+
+  const form = document.querySelector(".popup-box form");
+  const alertBox = document.getElementById("success-alert");
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    alertBox.classList.add("show");
+
+    form.reset();
+
+    setTimeout(() => {
+      alertBox.classList.remove("show");
+    }, 5000);
+  });
+
