@@ -131,7 +131,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const container = document.getElementById("gallery-Container");
   const filterButtons = document.querySelectorAll(".filter-buttons button");
 
-  // Fetch gallery data
   fetch("./data/gallery.json")
     .then(response => response.json())
     .then(data => {

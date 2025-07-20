@@ -14,22 +14,13 @@
   --brand-red-dark: #2d0c08;
   --primary: linear-gradient(135deg, #6f0000, #b82e5f);
   --shade: #FFF6F6;
+  --success:#155724;
 }
 
 * {
   font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
-}
-
-.body {
-  font-family: 'Segoe UI', sans-serif;
-  background: url('./media/bg.png') no-repeat center center fixed;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
 }
 
 /* Navbar */
@@ -232,7 +223,6 @@
   text-transform: uppercase;
 }
 
-/* Hover effect */
 .design-cards .card:hover {
   transform: translateY(-8px) scale(1.03);
   box-shadow: 0 12px 24px#EF88AD;
@@ -507,7 +497,6 @@
   font-size: 16px;
   border-bottom: 1px solid lightgray;
   box-shadow: 0 4px 12px rgba(211, 211, 211, 0.6);
-  /* lightgray */
 }
 
 /* Nails Care */
@@ -780,7 +769,7 @@
 
 .popup-box button[type="submit"] {
   background-color: var(--brand-red);
-  color: black;
+  color: var(--shade);
   border: none;
   padding: 10px 16px;
   cursor: pointer;
@@ -794,7 +783,7 @@
   padding: 1rem;
   border-radius: 6px;
   background-color: #d4edda;
-  color: #155724;
+  color: var(--success);
   border: 1px solid #c3e6cb;
   display: none;
   animation: fadeIn 0.5s ease-in;
@@ -862,7 +851,7 @@ a {
 }
 .footer-column p{
   font-weight: 500;
-  color: white;
+  color:var(--shade);
   margin-bottom: 24px;
   max-width: 280px;
 }
