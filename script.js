@@ -143,6 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
         `;
         container.appendChild(div);
       });
+      
 
       setupFiltering();
     })

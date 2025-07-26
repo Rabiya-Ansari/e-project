@@ -98,10 +98,11 @@
 }
 
 .dropdown-menu li a:hover {
-  background-color: #ffcc00;
-  color: black;
-  font-weight: bold;
+  background-color: #ffcc00 !important;
+  color: black !important;
+  font-weight: bold !important;
 }
+
 
 .dropdown:hover .dropdown-menu {
   display: block !important;
@@ -149,6 +150,9 @@
   color: var(--shade);
   font-weight: bold;
 }
+.carousel-caption .heading-color{
+  color: black;
+}
 
 /* About Section */
 
@@ -166,7 +170,15 @@
 }
 
 .about-container.home-about .about-text {
+  border: 1px solid lightgray;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   color: black;
+  padding: 10px;
+  border-radius: 10px;
+}
+.about-container.about-container.home-about .about-text:hover{
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 24px#EF88AD;
 }
 
 .about-container .about-text h2 {
@@ -177,6 +189,7 @@
   text-decoration-style: double;
   margin-bottom: 40px;
   font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .about-container .about-image img {
@@ -221,6 +234,7 @@
   font-weight: bold;
   margin-top: 25px;
   text-transform: uppercase;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .design-cards .card:hover {
@@ -316,6 +330,7 @@
 
 .product-detail h4 {
   font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .product-detail p {
@@ -346,6 +361,7 @@
 
 /* NailPowder */
 .nail-powder {
+  background: var(--shade);
   text-align: center;
   margin: auto;
   padding: 20px;
@@ -353,6 +369,7 @@
 }
 
 .nail-powder h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 24px;
   margin-bottom: 15px;
 }
@@ -381,19 +398,21 @@
   font-weight: 500;
 }
 .nail-item img:hover{
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px var(--brand-red-dark);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 24px#EF88AD;
 }
 /* NailPowder */
 
 /* Nail Gel */
 .gel-nail{
+  background: var(--shade);
   text-align: center;
   margin: auto;
   padding: 20px;
   max-width: 1000px;
 }
 .nail-gel h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 24px;
   margin-bottom: 15px;
 }
@@ -421,8 +440,8 @@
   font-weight: 500;
 }
 .gel-item img:hover{
-  transform: scale(1.05);
-  box-shadow: 0 4px 15px var(--brand-red-dark);
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 12px 24px#EF88AD;
 }
 /* Nail Gel */
 
@@ -435,6 +454,7 @@
 }
 
 .gallery-section h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 35px;
   color: #333;
   font-weight: bold;
@@ -522,6 +542,7 @@
 }
 
 .nail-care-content h2 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   margin-bottom: 10px;
   color: black !important;
   font-weight: bold;
@@ -624,6 +645,7 @@
 
 
 .contact-heading {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   font-weight: bold;
   margin-bottom: 10px;
@@ -803,13 +825,12 @@
 /* Footer */
 footer {
   background: var(--primary);
-  padding: 40px 20px 20px;
+  padding: 40px ;
   width: 100%;
   box-shadow: 0 0 16px var(--brand-red-dark);
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
-  justify-content:space-between ;
+  justify-content: space-between;
   color: var(--shade);
 }
 a {
@@ -818,12 +839,14 @@ a {
   transition: color 0.3s ease;
 }
 .footer-column{
-  min-width: 180px;
+  
   display: flex;
+  align-items: center;
   flex-direction: column;
-  gap: 12px;
+  
 }
 .footer-column h3{
+  justify-content: space-between;
   font-weight: 700;
   margin-bottom: 16px;
   color: var(--Lightpink);
@@ -832,7 +855,7 @@ a {
   list-style-type: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  
 }
 .footer-column ul li {
   font-weight: 500;
@@ -849,11 +872,10 @@ a {
 .footer-column ul li:hover{
   color:var(--goldyellow);
 }
-.footer-column p{
+.footer-column links p{
   font-weight: 500;
   color:var(--shade);
-  margin-bottom: 24px;
-  max-width: 280px;
+  
 }
 .social-icon{
   display: flex;
